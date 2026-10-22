@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nethra Opticals & Eye Care</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#111;color:#fff;text-align:center}
+header{background:#000;padding:30px 15px;border-bottom:3px solid #d4af37}
+h1{color:#d4af37;margin:0;font-size:30px}
+header p{margin-bottom:0}
+section{padding:30px 15px}
+h2{color:#d4af37}
+.card{background:#222;border:1px solid #d4af37;border-radius:12px;padding:20px;margin:15px auto;max-width:450px}
+.button{display:inline-block;background:#d4af37;color:#000;padding:13px 22px;text-decoration:none;border-radius:6px;font-weight:bold;margin:8px}
+footer{background:#000;padding:20px;color:#ddd}
+</style>
+</head>
+<body>
+<header>
+<h1>NETHRA OPTICALS</h1>
+<p>& EYE CARE</p>
+<p>Your Vision, Our Priority</p>
+</header>
+<section>
+<h2>Welcome to Nethra Opticals</h2>
+<p>Quality Eyewear and Personal Eye Care in Thiruvathukkal, Kottayam.</p>
+<a class="button" href="https://wa.me/918921903855">WhatsApp Us</a>
+</section>
+<section>
+<h2>Our Services</h2>
+<div class="card">
+<h3>Spectacle Frames & Lenses</h3>
+<p>Stylish frames and quality lenses for your needs.</p>
+</div>
+<div class="card">
+<h3>Eye Testing</h3>
+<p>Optometrist service and eye testing available.</p>
+</div>
+<div class="card">
+<h3>Sunglasses</h3>
+<p>Explore our collection of sunglasses.</p>
+</div>
+<div class="card">
+<h3>Progressive Lenses</h3>
+<p>Ask us about progressive lenses and suitable options.</p>
+</div>
+</section>
+<section>
+<h2>Visit Our Shop</h2>
+<div class="card">
+<h3>NETHRA OPTICALS & EYE CARE</h3>
+<p>Municipal Complex, Thiruvathukkal, Kottayam, Kerala</p>
+<p>Phone: 8921903855</p>
+<a class="button" href="https://www.google.com/maps/search/?api=1&query=Nethra+Opticals+Thiruvathukkal+Kottayam">Get Directions</a>
+<a class="button" href="https://wa.me/918921903855">Contact on WhatsApp</a>
+</div>
+</section>
+<footer>
+<p>© Nethra Opticals & Eye Care</p>
+<p>Municipal Complex, Thiruvathukkal</p>
+</footer>
+</body>
+</html>
