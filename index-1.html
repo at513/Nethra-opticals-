@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nethra Opticals & Eye Care, Municipal Complex, Thiruvathukkal, Kottayam. Shop spectacles and sunglasses. Order through WhatsApp.">
+  <title>Nethra Opticals & Eye Care | Thiruvathukkal</title>
+  <style>
+    :root { --gold:#d7b56d; --gold2:#f3dc9b; --black:#090909; --panel:#151515; --muted:#c7c1b5; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--black); color:#fff; font-family:Arial,Helvetica,sans-serif; line-height:1.55; }
+    a { color:inherit; text-decoration:none; }
+    .topbar { padding:10px 5%; text-align:center; background:#211b0e; color:var(--gold2); font-size:13px; letter-spacing:.4px; }
+    header { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:20px 5%; border-bottom:1px solid #302716; position:sticky; top:0; z-index:10; background:rgba(9,9,9,.96); }
+    .brand { font-weight:800; letter-spacing:1.5px; font-size:20px; color:var(--gold2); }
+    .brand small { display:block; color:#fff; font-size:10px; letter-spacing:3px; font-weight:500; margin-top:2px; }
+    nav { display:flex; gap:20px; align-items:center; font-size:14px; }
+    nav a:hover { color:var(--gold2); }
+    .btn { display:inline-block; background:linear-gradient(135deg,var(--gold2),var(--gold)); color:#111; padding:12px 18px; border-radius:5px; font-weight:700; border:0; cursor:pointer; }
+    .btn.outline { color:var(--gold2); background:transparent; border:1px solid var(--gold); }
+    .hero { min-height:470px; padding:75px 6%; display:grid; grid-template-columns:1.1fr .9fr; gap:30px; align-items:center; background:radial-gradient(ellipse at 80% 45%,#3a2d16 0%,#17130c 28%,#090909 67%); }
+    .eyebrow { color:var(--gold2); text-transform:uppercase; letter-spacing:3px; font-size:12px; font-weight:bold; }
+    h1 { font-size:clamp(36px,5vw,62px); line-height:1.08; margin:14px 0 18px; }
+    h1 span { color:var(--gold2); }
+    .hero p { color:var(--muted); max-width:540px; }
+    .hero-art { min-height:280px; display:flex; align-items:center; justify-content:center; }
+    .hero-art img { width:100%; max-width:460px; border-radius:12px; object-fit:cover; border:1px solid #6f582c; box-shadow:0 20px 60px #000; }
+    section { padding:60px 6%; }
+    .section-head { text-align:center; margin-bottom:30px; }
+    .section-head h2 { font-size:32px; margin:8px 0; }
+    .section-head p { color:var(--muted); margin:0 auto; max-width:620px; }
+    .categories { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .category { border:1px solid #3c301a; border-radius:10px; padding:24px; background:linear-gradient(145deg,#171717,#0e0e0e); }
+    .category .icon { font-size:30px; }
+    .category h3 { color:var(--gold2); margin:8px 0; }
+    .category p { color:var(--muted); font-size:14px; margin-bottom:0; }
+    .products { background:#101010; }
+    .product-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+    .product { overflow:hidden; background:#181818; border:1px solid #332919; border-radius:10px; }
+    .product img { width:100%; height:210px; object-fit:cover; display:block; background:#252525; }
+    .product-info { padding:17px; }
+    .product-info h3 { margin:0 0 5px; }
+    .product-info p { margin:0 0 12px; color:var(--muted); font-size:14px; }
+    .price { color:var(--gold2); font-size:19px; font-weight:800; margin-bottom:14px; }
+    .product .btn { width:100%; text-align:center; padding:10px; }
+    .note { color:#a9a39a; font-size:12px; text-align:center; margin-top:18px; }
+    .banner { display:flex; justify-content:space-between; align-items:center; gap:25px; background:linear-gradient(100deg,#2d2413,#15120b); border:1px solid #5a4726; padding:30px; border-radius:12px; }
+    .banner h2 { margin:0 0 7px; color:var(--gold2); }
+    .banner p { margin:0; color:var(--muted); }
+    .contact { display:grid; grid-template-columns:1fr 1fr; gap:25px; }
+    .contact-card { background:var(--panel); border:1px solid #332919; border-radius:10px; padding:25px; }
+    .contact-card h3 { color:var(--gold2); margin-top:0; }
+    .contact-card p { color:var(--muted); }
+    footer { padding:25px 6%; border-top:1px solid #302716; text-align:center; color:#aaa; font-size:13px; }
+    .float-wa { position:fixed; right:18px; bottom:18px; z-index:20; background:#25D366; color:#fff; border-radius:40px; padding:13px 17px; font-weight:800; box-shadow:0 5px 20px #0008; }
+    @media(max-width:760px) {
+      header { flex-wrap:wrap; padding:16px 5%; }
+      nav { width:100%; justify-content:space-between; gap:8px; font-size:12px; }
+      .hero { grid-template-columns:1fr; padding:55px 6%; }
+      .hero-art { min-height:180px; }
+      .categories,.product-grid,.contact { grid-template-columns:1fr; }
+      .product img { height:240px; }
+      .banner { flex-direction:column; align-items:flex-start; }
+      section { padding:45px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Premium Eyewear • Eye Care • WhatsApp Orders Available</div>
+  <header>
+    <a class="brand" href="#home">NETHRA OPTICALS<small>&amp; EYE CARE</small></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#products">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">See clearly. Look confident.</div>
+        <h1>Find Your <span>Perfect Look.</span></h1>
+        <p>Explore stylish spectacles and sunglasses at Nethra Opticals &amp; Eye Care. Visit our shop in Thiruvathukkal or message us on WhatsApp to ask about a frame.</p>
+        <p style="margin-top:25px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#products">Explore Collection</a>
+          <a class="btn outline" href="https://wa.me/918921903855?text=Hello%20Nethra%20Opticals%2C%20I%20would%20like%20to%20enquire%20about%20spectacles." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </p>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1000&q=85" alt="Stylish sunglasses">
+      </div>
+    </section>
+
+    <section id="collections">
+      <div class="section-head">
+        <div class="eyebrow">Our Collections</div>
+        <h2>Eyewear for Every Day</h2>
+        <p>Choose a style that suits you. Contact us to confirm availability, sizes and prices before ordering.</p>
+      </div>
+      <div class="categories">
+        <article class="category"><div class="icon">👓</div><h3>Optical Spectacles</h3><p>Everyday frames and prescription eyewear in a range of styles.</p></article>
+        <article class="category"><div class="icon">🕶️</div><h3>Sunglasses</h3><p>Classic and modern looks for your everyday outings.</p></article>
+        <article class="category"><div class="icon">✨</div><h3>Premium Lenses</h3><p>Ask us about progressive lenses and lens options for your needs.</p></article>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="section-head">
+        <div class="eyebrow">Featured Products</div>
+        <h2>Shop Our Picks</h2>
+        <p>These are starter sample cards. Replace the photos, product names and prices with your actual stock before publishing.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=900&q=80" alt="Optical frame sample">
+          <div class="product-info"><h3>Classic Optical Frame</h3><p>Everyday style • Ask for available colours</p><div class="price">Price: Enquire</div><a class="btn" href="https://wa.me/918921903855?text=Hello%2C%20I%20am%20interested%20in%20the%20Classic%20Optical%20Frame." target="_blank" rel="noopener">Enquire on WhatsApp</a></div>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80" alt="Sunglasses sample">
+          <div class="product-info"><h3>Premium Sunglasses</h3><p>Stylish look • Ask for available designs</p><div class="price">Price: Enquire</div><a class="btn" href="https://wa.me/918921903855?text=Hello%2C%20I%20am%20interested%20in%20the%20Premium%20Sunglasses." target="_blank" rel="noopener">Enquire on WhatsApp</a></div>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=900&q=80" alt="Modern eyewear sample">
+          <div class="product-info"><h3>Modern Metal Frame</h3><p>Lightweight look • Ask for availability</p><div class="price">Price: Enquire</div><a class="btn" href="https://wa.me/918921903855?text=Hello%2C%20I%20am%20interested%20in%20the%20Modern%20Metal%20Frame." target="_blank" rel="noopener">Enquire on WhatsApp</a></div>
+        </article>
+      </div>
+      <p class="note">Sample images and product cards are for layout preview only. Update them to match your real products and prices.</p>
+    </section>
+
+    <section>
+      <div class="banner">
+        <div><h2>Need help choosing eyewear?</h2><p>Message Nethra Opticals on WhatsApp and ask about frames, lenses and availability.</p></div>
+        <a class="btn" href="https://wa.me/918921903855?text=Hello%20Nethra%20Opticals%2C%20I%20need%20help%20choosing%20eyewear." target="_blank" rel="noopener">Message Us</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-head"><div class="eyebrow">Visit Us</div><h2>Contact Nethra Opticals</h2></div>
+      <div class="contact">
+        <div class="contact-card">
+          <h3>Store Information</h3>
+          <p><strong>Address:</strong><br>Municipal Complex, Thiruvathukkal, Kottayam, Kerala</p>
+          <p><strong>Phone / WhatsApp:</strong><br>8921903855</p>
+          <p><strong>Services:</strong><br>Spectacles, sunglasses, eye testing and lens enquiries.</p>
+          <a class="btn" href="https://wa.me/918921903855?text=Hello%20Nethra%20Opticals." target="_blank" rel="noopener">Contact on WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <h3>Find Our Shop</h3>
+          <p>Open Google Maps and search for Nethra Opticals, Thiruvathukkal, Kottayam.</p>
+          <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Nethra%20Opticals%20Municipal%20Complex%20Thiruvathukkal%20Kottayam" target="_blank" rel="noopener">Open Google Maps</a>
+          <p style="font-size:12px;margin-top:18px">Please confirm opening hours and product availability by phone before visiting.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Nethra Opticals &amp; Eye Care • Municipal Complex, Thiruvathukkal, Kottayam</footer>
+  <a class="float-wa" href="https://wa.me/918921903855?text=Hello%20Nethra%20Opticals." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
